@@ -8,54 +8,113 @@ Description:
 
 Architecture:
 ============
-For designing the application I have choose Spring boot.It is open source Java-based framework used to create a micro Service.I have chose these technology-
-Java:8
-Spring Boot:2.3.1.RELEASE
-GSON:2.8.5
-Lombok:1.18.6
-Commons-IO: 2.6 
-Maven :4.0.0
-For Deploying Spring boot has provided embedded Tomcat.
+For designing the application I have choose Spring boot.It is open source Java-based framework used to create a micro Service.I have chose these technology:
 
-Some key points:-
+* Java:8
+* Spring Boot:2.3.1.RELEASE
+* GSON:2.8.5
+* Lombok:1.18.6
+* Commons-IO: 2.6 
+* Maven :4.0.0
+* junit :4.12
+* embedded Tomcat
 
-a>I am using spring boot scheduler for calling vehicles service API every 10 second.
-b>Time interval is configured in properties files.
-c>I am using spring profile for deploying multiple environment.
-d>Implemented Spring boot actuator for checking health for service.
+Some key points:
+===============
+
+* a>I am using spring boot scheduler for calling vehicles service API every 10 second.
+* b>Time interval is configured in properties files.
+* c>I am using spring profile for deploying multiple environment.
+* d>Implemented Spring boot actuator for checking health for service.
+
+For Run The Application:
+=======================
+*To start this application you must be run live data of vehicle service.
+
+	````
+	docker pull car2godeveloper/api-for-coding-challenge 
+	docker run -d -p 3000:3000 car2godeveloper/api-for-coding-challenge
+	````
+
+* Build docker Image 
+
+   ````
+   docker build -t car2go .
+   ````
+   
+* Run Docker Image
+
+  ````
+  docker run -d -p 8080:8080 car2go
+  ````
+
+Note:
+=====
+Docker Container to Container communication I am using Inspect of running api-for-coding-challenge container to find IP address,
+By using this IP address I am calling http://172.17.0.2:3000/vehicles/Stuttgart to fetch Vehicles from stuttgart location.
 
 
 Dependencies:
 ============
-`Starter of Spring web uses Spring MVC, REST and Tomcat as a default embedded server. The single spring-boot-starter-web dependency transitively pulls in all dependencies related to web development. It also reduces the build dependency count.`
-  		<dependency>
+* `Starter of Spring web uses Spring MVC, REST and Tomcat as a default embedded server. The single spring-boot-starter-web dependency transitively pulls in all dependencies related to web development. It also reduces the build dependency count.`
+  		
+		````
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-`Spring Boot Actuator is a sub-project of Spring Boot. It provides several production-grade services to your application out of the box.`
+		````
+		
+* `Spring Boot Actuator is a sub-project of Spring Boot. It provides several production-grade services to your application out of the box.`
+      
+     	```
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-`It provides a multitude of classes that enable developers to do common tasks easily and with much less boiler-plate code, that needs to be written over and over again for every single project`
+		````
+		
+* `It provides a multitude of classes that enable developers to do common tasks easily and with much less boiler-plate code, that needs to be written over and over again for every single project`
+	
+      	````
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.6</version>
 		</dependency>
-`Gson is a Java library that can be used to convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object.`
+		````
+		
+* `Gson is a Java library that can be used to convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object.`
+		
+		````
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
 			<version>2.8.5</version>
 		</dependency>
-`Lombok is used to reduce boilerplate code for model/data objects, e.g., it can generate getters and setters for those object automatically by using.`
+		````
+		
+* `Lombok is used to reduce boilerplate code for model/data objects, e.g., it can generate getters and setters for those object automatically by using.`
+		
+		````
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<version>1.18.6</version>
 			<scope>provided</scope>
 		</dependency>
+		````
+		
+* `Junit test case dependency for test functionality`
+		
+		````
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		````
 
 Key Queries:
 ===========
