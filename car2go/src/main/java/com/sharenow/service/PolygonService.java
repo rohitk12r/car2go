@@ -69,7 +69,7 @@ public class PolygonService {
             log.error("Getting execption in manipulating Polygon Json ", e);
             throw new PolygonException(e.getLocalizedMessage(), e.getMessage(), e);
         }
-        throw new PolygonException(vin + " : VIN is not availabe in Stuttgart location API ");
+        throw new PolygonException(vin + " : VIN is not availabe in Stuttgart location API.Please check another VIN number. ");
     }
 
     private Polygon getPolygonForCheckLatitudeAndLongitudeCondition(List<GeoJson> geoJsons, Vehicles vehicle)
@@ -86,6 +86,6 @@ public class PolygonService {
                 return polygonValues.get();
             }
         }
-        throw new PolygonException(vehicle.getVin() + " : VIN is not availabe in Stuttgart Polygon");
+        throw new PolygonException(vehicle.getVin() + " : VIN is not availabe in Stuttgart Polygon. Please check another VIN number.");
     }
 }

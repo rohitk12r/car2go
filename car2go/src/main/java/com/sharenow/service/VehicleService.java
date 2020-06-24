@@ -68,7 +68,7 @@ public class VehicleService {
                     if (!CollectionUtils.isEmpty(cars)) {
                         return cars;
                     } else
-                        throw new VehicleException("No Cars available in this : " + polygonId);
+                        throw new VehicleException("No Cars available in this : " + polygonId+ "Please use another Polygon ID");
                 }
             } else
                 throw new VehicleException("Please Check GEOJSON and Vehicles Service are Running");
