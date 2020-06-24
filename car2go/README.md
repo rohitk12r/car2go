@@ -68,7 +68,7 @@ Dependencies:
 		
 * Spring Boot Actuator is a sub-project of Spring Boot. It provides several production-grade services to your application out of the box.
       
-     	```
+     	````
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
