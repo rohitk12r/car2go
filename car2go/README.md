@@ -74,10 +74,12 @@ Dependencies:
 * Starter of Spring web uses Spring MVC, REST and Tomcat as a default embedded server. The single spring-boot-starter-web dependency transitively pulls in all dependencies related to web development. It also reduces the build dependency count.
   		
 		````
+		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		
 		````
 		
 * Spring Boot Actuator is a sub-project of Spring Boot. It provides several production-grade services to your application out of the box.
