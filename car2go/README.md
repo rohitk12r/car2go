@@ -22,14 +22,14 @@ For designing the application I have choose Spring boot.It is open source Java-b
 Some key points:
 ===============
 
-* a>I am using spring boot scheduler for calling vehicles service API every 10 second.
-* b>Time interval is configured in properties files.
-* c>I am using spring profile for deploying multiple environment.
-* d>Implemented Spring boot actuator for checking health for service.
+* I am using spring boot scheduler for calling vehicles service API every 10 second.
+* Time interval is configured in properties files.
+* I am using spring profile for deploying multiple environment.
+* Implemented Spring boot actuator for checking health for service.
 
 For Run The Application:
 =======================
-*To start this application you must be run live data of vehicle service.
+* To start this application you must be run live data of vehicle service.
 
 	````
 	docker pull car2godeveloper/api-for-coding-challenge 
@@ -56,7 +56,8 @@ By using this IP address I am calling http://172.17.0.2:3000/vehicles/Stuttgart 
 
 Dependencies:
 ============
-* `Starter of Spring web uses Spring MVC, REST and Tomcat as a default embedded server. The single spring-boot-starter-web dependency transitively pulls in all dependencies related to web development. It also reduces the build dependency count.`
+
+* Starter of Spring web uses Spring MVC, REST and Tomcat as a default embedded server. The single spring-boot-starter-web dependency transitively pulls in all dependencies related to web development. It also reduces the build dependency count.
   		
 		````
 		<dependency>
@@ -65,7 +66,7 @@ Dependencies:
 		</dependency>
 		````
 		
-* `Spring Boot Actuator is a sub-project of Spring Boot. It provides several production-grade services to your application out of the box.`
+* Spring Boot Actuator is a sub-project of Spring Boot. It provides several production-grade services to your application out of the box.
       
      	```
 		<dependency>
@@ -74,7 +75,7 @@ Dependencies:
 		</dependency>
 		````
 		
-* `It provides a multitude of classes that enable developers to do common tasks easily and with much less boiler-plate code, that needs to be written over and over again for every single project`
+* It provides a multitude of classes that enable developers to do common tasks easily and with much less boiler-plate code, that needs to be written over and over again for every single project.
 	
       	````
 		<dependency>
@@ -84,7 +85,7 @@ Dependencies:
 		</dependency>
 		````
 		
-* `Gson is a Java library that can be used to convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object.`
+* Gson is a Java library that can be used to convert Java Objects into their JSON representation. It can also be used to convert a JSON string to an equivalent Java object.
 		
 		````
 		<dependency>
@@ -94,7 +95,7 @@ Dependencies:
 		</dependency>
 		````
 		
-* `Lombok is used to reduce boilerplate code for model/data objects, e.g., it can generate getters and setters for those object automatically by using.`
+* Lombok is used to reduce boilerplate code for model/data objects, e.g., it can generate getters and setters for those object automatically by using.
 		
 		````
 		<dependency>
@@ -105,7 +106,7 @@ Dependencies:
 		</dependency>
 		````
 		
-* `Junit test case dependency for test functionality`
+* Junit test case dependency for test functionality
 		
 		````
 		<dependency>
