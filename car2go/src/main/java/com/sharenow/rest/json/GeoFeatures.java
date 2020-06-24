@@ -10,8 +10,8 @@ import lombok.Data;
  */
 @Data
 public class GeoFeatures {
-	private String name;
+    private String name;
 
-	private Geometry geometry;
+    private Geometry geometry;
 
 }

@@ -12,29 +12,29 @@ import lombok.Data;
  */
 @Data
 public class GeoJson {
-	private String _id;
+    private String _id;
 
-	private String updatedAt;
+    private String updatedAt;
 
-	private String createdAt;
+    private String createdAt;
 
-	private int __v;
+    private int __v;
 
-	private String name;
+    private String name;
 
-	private String cityId;
+    private String cityId;
 
-	private String legacyId;
+    private String legacyId;
 
-	private String type;
+    private String type;
 
-	private List<GeoFeatures> geoFeatures;
+    private List<GeoFeatures> geoFeatures;
 
-	private Options options;
+    private Options options;
 
-	private List<TimedOptions> timedOptions;
+    private List<TimedOptions> timedOptions;
 
-	private GeometryPolygon geometry;
+    private GeometryPolygon geometry;
 
-	private int version;
+    private int version;
 }

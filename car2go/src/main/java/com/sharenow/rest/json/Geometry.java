@@ -3,6 +3,7 @@ package com.sharenow.rest.json;
 import java.util.List;
 
 import lombok.Data;
+
 /**
  * It is holds Geometry form Geo Json
  * 
@@ -11,8 +12,8 @@ import lombok.Data;
  */
 @Data
 public class Geometry {
-	private String type;
+    private String type;
 
-	private List<Double> coordinates;
+    private List<Double> coordinates;
 
 }

@@ -12,12 +12,12 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Polygon {
-	/**
-	 * This is Polygon ID for GeoJson
-	 */
-	private String polygonId;
-	/**
-	 * This is for VIN number for car.
-	 */
-	private String vin;
+    /**
+     * This is Polygon ID for GeoJson
+     */
+    private String polygonId;
+    /**
+     * This is for VIN number for car.
+     */
+    private String vin;
 }

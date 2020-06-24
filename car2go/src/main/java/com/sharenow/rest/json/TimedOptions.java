@@ -12,8 +12,8 @@ import lombok.Data;
  */
 @Data
 public class TimedOptions {
-	private String key;
+    private String key;
 
-	private List<List<Integer>> changesOverTime;
+    private List<List<Integer>> changesOverTime;
 
 }

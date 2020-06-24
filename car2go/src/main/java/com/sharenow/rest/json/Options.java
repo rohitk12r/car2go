@@ -10,10 +10,10 @@ import lombok.Data;
  */
 @Data
 public class Options {
-	private boolean active;
+    private boolean active;
 
-	private boolean is_excluded;
+    private boolean is_excluded;
 
-	private double area;
+    private double area;
 
 }

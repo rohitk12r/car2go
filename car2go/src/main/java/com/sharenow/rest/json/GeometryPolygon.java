@@ -12,8 +12,8 @@ import lombok.Data;
  */
 @Data
 public class GeometryPolygon {
-	private String type;
+    private String type;
 
-	private List<List<List<Double>>> coordinates;
+    private List<List<List<Double>>> coordinates;
 
 }

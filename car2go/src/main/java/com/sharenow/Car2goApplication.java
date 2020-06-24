@@ -12,15 +12,15 @@ import com.sharenow.utils.GeoJsonReaderUtils;
 @EnableScheduling
 public class Car2goApplication implements CommandLineRunner {
 
-	@Autowired
-	private GeoJsonReaderUtils geoJsonReaderUtils;
+    @Autowired
+    private GeoJsonReaderUtils geoJsonReaderUtils;
 
-	public static void main(String[] args) {
-		SpringApplication.run(Car2goApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(Car2goApplication.class, args);
+    }
 
-	@Override
-	public void run(String... args) throws Exception {
-		geoJsonReaderUtils.readGeoJson();
-	}
+    @Override
+    public void run(String... args) throws Exception {
+        geoJsonReaderUtils.readGeoJson();
+    }
 }

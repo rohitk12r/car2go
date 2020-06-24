@@ -10,18 +10,18 @@ import lombok.Data;
  */
 @Data
 public class Vehicles {
-	private int id;
+    private int id;
 
-	private int locationId;
+    private int locationId;
 
-	private String vin;
+    private String vin;
 
-	private String numberPlate;
+    private String numberPlate;
 
-	private Position position;
+    private Position position;
 
-	private double fuel;
+    private double fuel;
 
-	private String model;
+    private String model;
 
 }

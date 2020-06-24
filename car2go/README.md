@@ -26,6 +26,14 @@ Some key points:
 * Time interval is configured in properties files.
 * I am using spring profile for deploying multiple environment.
 * Implemented Spring boot actuator for checking health for service.
+* I am not using any database for dumping json object.I used ArrayList to store JSON Object. 
+* I have written unit test case only successful path for services and api.
+* Longitute and Latitude have different value, So in verifying the vehicle values in roundoff to 2 digits mechanism. 
+* I did not add unit test case in maven build. So we need to test by mannuly. 
+
+Open points:
+============
+* Vehicle Location service API is returning the information of vehicle in every refresh, which provide new data every point. 
 
 For Run The Application:
 =======================
@@ -35,6 +43,12 @@ For Run The Application:
 	docker pull car2godeveloper/api-for-coding-challenge 
 	docker run -d -p 3000:3000 car2godeveloper/api-for-coding-challenge
 	````
+	
+* First build maven 
+   
+   ````
+   mvn clean install
+   ````
 
 * Build docker Image 
 

@@ -12,5 +12,5 @@ import lombok.Data;
  */
 @Data
 public class Root {
-	private List<GeoJson> geoJson;
+    private List<GeoJson> geoJson;
 }
